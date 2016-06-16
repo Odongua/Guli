@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		747C4FD70DE89FB8FA047E9E /* libPods-Guli_Notebook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4807795B87A322C70856915 /* libPods-Guli_Notebook.a */; };
+		981076941D124C1E0046EABC /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 981076871D124C1E0046EABC /* 1.plist */; };
+		981076951D124C1E0046EABC /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 981076891D124C1E0046EABC /* CollectionViewCell.m */; };
+		981076961D124C1E0046EABC /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9810768A1D124C1E0046EABC /* CollectionViewCell.xib */; };
+		981076971D124C1E0046EABC /* PhotoFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9810768C1D124C1E0046EABC /* PhotoFlowLayout.m */; };
+		981076981D124C1E0046EABC /* PhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9810768E1D124C1E0046EABC /* PhotoModel.m */; };
+		981076991D124C1E0046EABC /* PhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 981076901D124C1E0046EABC /* PhotoView.m */; };
+		9810769A1D124C1E0046EABC /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 981076921D124C1E0046EABC /* PhotoViewController.m */; };
+		9810769B1D124C1E0046EABC /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 981076931D124C1E0046EABC /* PhotoViewController.xib */; };
+		989A7F681D0E46DA009A603F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 989A7F671D0E46DA009A603F /* main.m */; };
+		989A7F731D0E46DA009A603F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989A7F721D0E46DA009A603F /* Assets.xcassets */; };
+		989A7F761D0E46DA009A603F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989A7F741D0E46DA009A603F /* LaunchScreen.storyboard */; };
+		989A7FC21D0E8FD1009A603F /* HostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989A7FB51D0E8FD1009A603F /* HostViewController.m */; };
+		989A7FC31D0E8FD1009A603F /* HostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989A7FB61D0E8FD1009A603F /* HostViewController.xib */; };
+		989A7FCB1D0E9093009A603F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989A7FCA1D0E9093009A603F /* RootViewController.m */; };
+		989A7FDC1D0E9DDD009A603F /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989A7FDB1D0E9DDD009A603F /* DrawerViewController.m */; };
+		989A7FDF1D0E9DFC009A603F /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 989A7FDE1D0E9DFC009A603F /* UIView_extra.m */; };
+		989A7FEA1D0EAE4F009A603F /* MyPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989A7FE91D0EAE4F009A603F /* MyPageController.m */; };
+		9F2A61881D0EB4F8004DFF46 /* 更多.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2A61871D0EB4F8004DFF46 /* 更多.png */; };
+		9F2A61931D0EC769004DFF46 /* 空.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2A61921D0EC769004DFF46 /* 空.m */; };
+		9F2A61971D0EC992004DFF46 /* HostDetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2A61951D0EC992004DFF46 /* HostDetailedViewController.m */; };
+		9F2A61981D0EC992004DFF46 /* HostDetailedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F2A61961D0EC992004DFF46 /* HostDetailedViewController.xib */; };
+		9F2A61A01D0ECE39004DFF46 /* UIImage+ImageContentWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2A619F1D0ECE39004DFF46 /* UIImage+ImageContentWithColor.m */; };
+		9F3E5ADA1D12341100FF4E84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E5AD91D12341100FF4E84 /* AppDelegate.m */; };
+		9FB3E98E1D1038390038991B /* 照片.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E98B1D1038390038991B /* 照片.png */; };
+		9FB3E98F1D1038390038991B /* 录音.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E98C1D1038390038991B /* 录音.png */; };
+		9FB3E9901D1038390038991B /* 视频.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E98D1D1038390038991B /* 视频.png */; };
+		9FB3E9941D1042AD0038991B /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3E9921D1042AD0038991B /* CalendarViewController.m */; };
+		9FB3E9951D1042AD0038991B /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E9931D1042AD0038991B /* CalendarViewController.xib */; };
+		9FB3E9A81D1043680038991B /* bt_next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E9A21D1043680038991B /* bt_next@2x.png */; };
+		9FB3E9A91D1043680038991B /* bt_previous@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E9A31D1043680038991B /* bt_previous@2x.png */; };
+		9FB3E9AA1D1043680038991B /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3E9A51D1043680038991B /* DataModel.m */; };
+		9FB3E9AB1D1043680038991B /* UIColor+ZXLazy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3E9A71D1043680038991B /* UIColor+ZXLazy.m */; };
+		9FB3E9B31D1043710038991B /* SZCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3E9AD1D1043710038991B /* SZCalendarCell.m */; };
+		9FB3E9B41D1043710038991B /* SZCalendarPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3E9AF1D1043710038991B /* SZCalendarPicker.m */; };
+		9FB3E9B51D1043710038991B /* SZCalendarPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E9B01D1043710038991B /* SZCalendarPicker.xib */; };
+		9FB3E9B61D1043710038991B /* SZTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3E9B21D1043710038991B /* SZTableViewController.m */; };
+		9FBCEF211D0FA56300B768C1 /* 添加.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FBCEF201D0FA56300B768C1 /* 添加.png */; };
+		9FBEC6AC1D11369800D5A28A /* 返回.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FBEC6AB1D11369800D5A28A /* 返回.png */; };
+		9FBEC6B51D115C1500D5A28A /* AllenNSTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBEC6B41D115C1500D5A28A /* AllenNSTextAttachment.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		981076871D124C1E0046EABC /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		981076881D124C1E0046EABC /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		981076891D124C1E0046EABC /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		9810768A1D124C1E0046EABC /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		9810768B1D124C1E0046EABC /* PhotoFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoFlowLayout.h; sourceTree = "<group>"; };
+		9810768C1D124C1E0046EABC /* PhotoFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoFlowLayout.m; sourceTree = "<group>"; };
+		9810768D1D124C1E0046EABC /* PhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoModel.h; sourceTree = "<group>"; };
+		9810768E1D124C1E0046EABC /* PhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoModel.m; sourceTree = "<group>"; };
+		9810768F1D124C1E0046EABC /* PhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoView.h; sourceTree = "<group>"; };
+		981076901D124C1E0046EABC /* PhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoView.m; sourceTree = "<group>"; };
+		981076911D124C1E0046EABC /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		981076921D124C1E0046EABC /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		981076931D124C1E0046EABC /* PhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoViewController.xib; sourceTree = "<group>"; };
+		989A7F631D0E46DA009A603F /* Guli_Notebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guli_Notebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		989A7F671D0E46DA009A603F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		989A7F721D0E46DA009A603F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		989A7F751D0E46DA009A603F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		989A7F771D0E46DA009A603F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		989A7FB41D0E8FD1009A603F /* HostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostViewController.h; sourceTree = "<group>"; };
+		989A7FB51D0E8FD1009A603F /* HostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostViewController.m; sourceTree = "<group>"; };
+		989A7FB61D0E8FD1009A603F /* HostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HostViewController.xib; sourceTree = "<group>"; };
+		989A7FC91D0E9093009A603F /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		989A7FCA1D0E9093009A603F /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		989A7FDA1D0E9DDD009A603F /* DrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerViewController.h; sourceTree = "<group>"; };
+		989A7FDB1D0E9DDD009A603F /* DrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerViewController.m; sourceTree = "<group>"; };
+		989A7FDD1D0E9DFC009A603F /* UIView_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIView_extra.h; sourceTree = "<group>"; };
+		989A7FDE1D0E9DFC009A603F /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView_extra.m; sourceTree = "<group>"; };
+		989A7FE81D0EAE4F009A603F /* MyPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPageController.h; sourceTree = "<group>"; };
+		989A7FE91D0EAE4F009A603F /* MyPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPageController.m; sourceTree = "<group>"; };
+		9F2A61871D0EB4F8004DFF46 /* 更多.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更多.png"; sourceTree = "<group>"; };
+		9F2A61911D0EC769004DFF46 /* 空.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "空.h"; sourceTree = "<group>"; };
+		9F2A61921D0EC769004DFF46 /* 空.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "空.m"; sourceTree = "<group>"; };
+		9F2A61941D0EC992004DFF46 /* HostDetailedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostDetailedViewController.h; sourceTree = "<group>"; };
+		9F2A61951D0EC992004DFF46 /* HostDetailedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostDetailedViewController.m; sourceTree = "<group>"; };
+		9F2A61961D0EC992004DFF46 /* HostDetailedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HostDetailedViewController.xib; sourceTree = "<group>"; };
+		9F2A61991D0ECA5A004DFF46 /* Color_macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color_macro.h; sourceTree = "<group>"; };
+		9F2A619E1D0ECE39004DFF46 /* UIImage+ImageContentWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageContentWithColor.h"; sourceTree = "<group>"; };
+		9F2A619F1D0ECE39004DFF46 /* UIImage+ImageContentWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageContentWithColor.m"; sourceTree = "<group>"; };
+		9F3E5AD81D12341100FF4E84 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9F3E5AD91D12341100FF4E84 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9FB3E98B1D1038390038991B /* 照片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照片.png"; sourceTree = "<group>"; };
+		9FB3E98C1D1038390038991B /* 录音.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "录音.png"; sourceTree = "<group>"; };
+		9FB3E98D1D1038390038991B /* 视频.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "视频.png"; sourceTree = "<group>"; };
+		9FB3E9911D1042AD0038991B /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		9FB3E9921D1042AD0038991B /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		9FB3E9931D1042AD0038991B /* CalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
+		9FB3E9A21D1043680038991B /* bt_next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_next@2x.png"; sourceTree = "<group>"; };
+		9FB3E9A31D1043680038991B /* bt_previous@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_previous@2x.png"; sourceTree = "<group>"; };
+		9FB3E9A41D1043680038991B /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		9FB3E9A51D1043680038991B /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		9FB3E9A61D1043680038991B /* UIColor+ZXLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZXLazy.h"; sourceTree = "<group>"; };
+		9FB3E9A71D1043680038991B /* UIColor+ZXLazy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZXLazy.m"; sourceTree = "<group>"; };
+		9FB3E9AC1D1043710038991B /* SZCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZCalendarCell.h; sourceTree = "<group>"; };
+		9FB3E9AD1D1043710038991B /* SZCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZCalendarCell.m; sourceTree = "<group>"; };
+		9FB3E9AE1D1043710038991B /* SZCalendarPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZCalendarPicker.h; sourceTree = "<group>"; };
+		9FB3E9AF1D1043710038991B /* SZCalendarPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZCalendarPicker.m; sourceTree = "<group>"; };
+		9FB3E9B01D1043710038991B /* SZCalendarPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SZCalendarPicker.xib; sourceTree = "<group>"; };
+		9FB3E9B11D1043710038991B /* SZTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZTableViewController.h; sourceTree = "<group>"; };
+		9FB3E9B21D1043710038991B /* SZTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZTableViewController.m; sourceTree = "<group>"; };
+		9FBCEF201D0FA56300B768C1 /* 添加.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加.png"; sourceTree = "<group>"; };
+		9FBEC6AB1D11369800D5A28A /* 返回.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回.png"; sourceTree = "<group>"; };
+		9FBEC6B31D115C1500D5A28A /* AllenNSTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllenNSTextAttachment.h; sourceTree = "<group>"; };
+		9FBEC6B41D115C1500D5A28A /* AllenNSTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllenNSTextAttachment.m; sourceTree = "<group>"; };
+		E984E2ECD9072E1C89033494 /* Pods-Guli_Notebook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guli_Notebook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Guli_Notebook/Pods-Guli_Notebook.debug.xcconfig"; sourceTree = "<group>"; };
+		F2BB3B93ED0FD945C242A908 /* Pods-Guli_Notebook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guli_Notebook.release.xcconfig"; path = "Pods/Target Support Files/Pods-Guli_Notebook/Pods-Guli_Notebook.release.xcconfig"; sourceTree = "<group>"; };
+		F4807795B87A322C70856915 /* libPods-Guli_Notebook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Guli_Notebook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		989A7F601D0E46DA009A603F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747C4FD70DE89FB8FA047E9E /* libPods-Guli_Notebook.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57C3FC81736EEAB0CAE5B224 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E984E2ECD9072E1C89033494 /* Pods-Guli_Notebook.debug.xcconfig */,
+				F2BB3B93ED0FD945C242A908 /* Pods-Guli_Notebook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		981076861D124C1E0046EABC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				981076871D124C1E0046EABC /* 1.plist */,
+				981076881D124C1E0046EABC /* CollectionViewCell.h */,
+				981076891D124C1E0046EABC /* CollectionViewCell.m */,
+				9810768A1D124C1E0046EABC /* CollectionViewCell.xib */,
+				9810768B1D124C1E0046EABC /* PhotoFlowLayout.h */,
+				9810768C1D124C1E0046EABC /* PhotoFlowLayout.m */,
+				9810768D1D124C1E0046EABC /* PhotoModel.h */,
+				9810768E1D124C1E0046EABC /* PhotoModel.m */,
+				9810768F1D124C1E0046EABC /* PhotoView.h */,
+				981076901D124C1E0046EABC /* PhotoView.m */,
+				981076911D124C1E0046EABC /* PhotoViewController.h */,
+				981076921D124C1E0046EABC /* PhotoViewController.m */,
+				981076931D124C1E0046EABC /* PhotoViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		989A7F5A1D0E46DA009A603F = {
+			isa = PBXGroup;
+			children = (
+				989A7F651D0E46DA009A603F /* Guli_Notebook */,
+				989A7F641D0E46DA009A603F /* Products */,
+				57C3FC81736EEAB0CAE5B224 /* Pods */,
+				C2E6C1FD5D9DF5E457B4CE1C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		989A7F641D0E46DA009A603F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				989A7F631D0E46DA009A603F /* Guli_Notebook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		989A7F651D0E46DA009A603F /* Guli_Notebook */ = {
+			isa = PBXGroup;
+			children = (
+				989A7FA41D0E8E45009A603F /* Classes */,
+				989A7F721D0E46DA009A603F /* Assets.xcassets */,
+				989A7F741D0E46DA009A603F /* LaunchScreen.storyboard */,
+				989A7F771D0E46DA009A603F /* Info.plist */,
+				989A7F661D0E46DA009A603F /* Supporting Files */,
+			);
+			path = Guli_Notebook;
+			sourceTree = "<group>";
+		};
+		989A7F661D0E46DA009A603F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				989A7F671D0E46DA009A603F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		989A7FA41D0E8E45009A603F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				989A7FA51D0E8EDD009A603F /* AppDelegate */,
+				989A7FD61D0E9DB0009A603F /* Drawer */,
+				9F2A619D1D0ECE2E004DFF46 /* Helpers */,
+				9F2A61821D0EB223004DFF46 /* Macros */,
+				9F2A61831D0EB223004DFF46 /* Resources */,
+				9F2A61841D0EB223004DFF46 /* General */,
+				989A7FAA1D0E8EDD009A603F /* Scenes */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		989A7FA51D0E8EDD009A603F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9F3E5AD81D12341100FF4E84 /* AppDelegate.h */,
+				9F3E5AD91D12341100FF4E84 /* AppDelegate.m */,
+				989A7FC91D0E9093009A603F /* RootViewController.h */,
+				989A7FCA1D0E9093009A603F /* RootViewController.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		989A7FAA1D0E8EDD009A603F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				989A7FCD1D0E9A32009A603F /* MyPage */,
+				989A7FAB1D0E8FD1009A603F /* Calendar */,
+				989A7FB21D0E8FD1009A603F /* Host */,
+				989A7FB91D0E8FD1009A603F /* Photo */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		989A7FAB1D0E8FD1009A603F /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				989A7FAC1D0E8FD1009A603F /* Controller */,
+				9FB3E9A01D1043380038991B /* model */,
+				9FB3E9A11D10434F0038991B /* view */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		989A7FAC1D0E8FD1009A603F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3E9911D1042AD0038991B /* CalendarViewController.h */,
+				9FB3E9921D1042AD0038991B /* CalendarViewController.m */,
+				9FB3E9931D1042AD0038991B /* CalendarViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		989A7FB21D0E8FD1009A603F /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				989A7FB31D0E8FD1009A603F /* Controller */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		989A7FB31D0E8FD1009A603F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				989A7FB41D0E8FD1009A603F /* HostViewController.h */,
+				989A7FB51D0E8FD1009A603F /* HostViewController.m */,
+				989A7FB61D0E8FD1009A603F /* HostViewController.xib */,
+				9F2A61941D0EC992004DFF46 /* HostDetailedViewController.h */,
+				9F2A61951D0EC992004DFF46 /* HostDetailedViewController.m */,
+				9F2A61961D0EC992004DFF46 /* HostDetailedViewController.xib */,
+				9FBEC6B31D115C1500D5A28A /* AllenNSTextAttachment.h */,
+				9FBEC6B41D115C1500D5A28A /* AllenNSTextAttachment.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		989A7FB91D0E8FD1009A603F /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				981076861D124C1E0046EABC /* Controller */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		989A7FCD1D0E9A32009A603F /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				989A7FE81D0EAE4F009A603F /* MyPageController.h */,
+				989A7FE91D0EAE4F009A603F /* MyPageController.m */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		989A7FD61D0E9DB0009A603F /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				989A7FDA1D0E9DDD009A603F /* DrawerViewController.h */,
+				989A7FDB1D0E9DDD009A603F /* DrawerViewController.m */,
+				989A7FDD1D0E9DFC009A603F /* UIView_extra.h */,
+				989A7FDE1D0E9DFC009A603F /* UIView_extra.m */,
+			);
+			path = Drawer;
+			sourceTree = "<group>";
+		};
+		9F2A61821D0EB223004DFF46 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				9F2A61991D0ECA5A004DFF46 /* Color_macro.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		9F2A61831D0EB223004DFF46 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F2A61911D0EC769004DFF46 /* 空.h */,
+				9F2A61921D0EC769004DFF46 /* 空.m */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9F2A61841D0EB223004DFF46 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				9F2A61871D0EB4F8004DFF46 /* 更多.png */,
+				9FBCEF201D0FA56300B768C1 /* 添加.png */,
+				9FBEC6AB1D11369800D5A28A /* 返回.png */,
+				9FB3E98B1D1038390038991B /* 照片.png */,
+				9FB3E98C1D1038390038991B /* 录音.png */,
+				9FB3E98D1D1038390038991B /* 视频.png */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		9F2A619D1D0ECE2E004DFF46 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9F2A619E1D0ECE39004DFF46 /* UIImage+ImageContentWithColor.h */,
+				9F2A619F1D0ECE39004DFF46 /* UIImage+ImageContentWithColor.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9FB3E9A01D1043380038991B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3E9A21D1043680038991B /* bt_next@2x.png */,
+				9FB3E9A31D1043680038991B /* bt_previous@2x.png */,
+				9FB3E9A41D1043680038991B /* DataModel.h */,
+				9FB3E9A51D1043680038991B /* DataModel.m */,
+				9FB3E9A61D1043680038991B /* UIColor+ZXLazy.h */,
+				9FB3E9A71D1043680038991B /* UIColor+ZXLazy.m */,
+			);
+			name = model;
+			path = ../model;
+			sourceTree = "<group>";
+		};
+		9FB3E9A11D10434F0038991B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3E9AC1D1043710038991B /* SZCalendarCell.h */,
+				9FB3E9AD1D1043710038991B /* SZCalendarCell.m */,
+				9FB3E9AE1D1043710038991B /* SZCalendarPicker.h */,
+				9FB3E9AF1D1043710038991B /* SZCalendarPicker.m */,
+				9FB3E9B01D1043710038991B /* SZCalendarPicker.xib */,
+				9FB3E9B11D1043710038991B /* SZTableViewController.h */,
+				9FB3E9B21D1043710038991B /* SZTableViewController.m */,
+			);
+			name = view;
+			path = Controller/view;
+			sourceTree = "<group>";
+		};
+		C2E6C1FD5D9DF5E457B4CE1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4807795B87A322C70856915 /* libPods-Guli_Notebook.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		989A7F621D0E46DA009A603F /* Guli_Notebook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 989A7F7A1D0E46DA009A603F /* Build configuration list for PBXNativeTarget "Guli_Notebook" */;
+			buildPhases = (
+				FDCD1BF42212568CFE40CB47 /* [CP] Check Pods Manifest.lock */,
+				989A7F5F1D0E46DA009A603F /* Sources */,
+				989A7F601D0E46DA009A603F /* Frameworks */,
+				989A7F611D0E46DA009A603F /* Resources */,
+				8E1BDD39B5E5496A904A6184 /* [CP] Embed Pods Frameworks */,
+				9E08B37583D2A60C85C3AF35 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Guli_Notebook;
+			productName = Guli_Notebook;
+			productReference = 989A7F631D0E46DA009A603F /* Guli_Notebook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		989A7F5B1D0E46DA009A603F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Borjigin Odongua";
+				TargetAttributes = {
+					989A7F621D0E46DA009A603F = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3LWKWTX7DM;
+					};
+				};
+			};
+			buildConfigurationList = 989A7F5E1D0E46DA009A603F /* Build configuration list for PBXProject "Guli_Notebook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 989A7F5A1D0E46DA009A603F;
+			productRefGroup = 989A7F641D0E46DA009A603F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				989A7F621D0E46DA009A603F /* Guli_Notebook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		989A7F611D0E46DA009A603F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				981076941D124C1E0046EABC /* 1.plist in Resources */,
+				989A7FC31D0E8FD1009A603F /* HostViewController.xib in Resources */,
+				9FB3E9B51D1043710038991B /* SZCalendarPicker.xib in Resources */,
+				9F2A61881D0EB4F8004DFF46 /* 更多.png in Resources */,
+				9FB3E9901D1038390038991B /* 视频.png in Resources */,
+				989A7F761D0E46DA009A603F /* LaunchScreen.storyboard in Resources */,
+				9FB3E9A81D1043680038991B /* bt_next@2x.png in Resources */,
+				9FB3E98E1D1038390038991B /* 照片.png in Resources */,
+				9810769B1D124C1E0046EABC /* PhotoViewController.xib in Resources */,
+				989A7F731D0E46DA009A603F /* Assets.xcassets in Resources */,
+				9FB3E9951D1042AD0038991B /* CalendarViewController.xib in Resources */,
+				9FBEC6AC1D11369800D5A28A /* 返回.png in Resources */,
+				9FBCEF211D0FA56300B768C1 /* 添加.png in Resources */,
+				9FB3E9A91D1043680038991B /* bt_previous@2x.png in Resources */,
+				9F2A61981D0EC992004DFF46 /* HostDetailedViewController.xib in Resources */,
+				981076961D124C1E0046EABC /* CollectionViewCell.xib in Resources */,
+				9FB3E98F1D1038390038991B /* 录音.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E1BDD39B5E5496A904A6184 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Guli_Notebook/Pods-Guli_Notebook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E08B37583D2A60C85C3AF35 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Guli_Notebook/Pods-Guli_Notebook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDCD1BF42212568CFE40CB47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		989A7F5F1D0E46DA009A603F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB3E9AA1D1043680038991B /* DataModel.m in Sources */,
+				9F2A61931D0EC769004DFF46 /* 空.m in Sources */,
+				9F3E5ADA1D12341100FF4E84 /* AppDelegate.m in Sources */,
+				9FB3E9B41D1043710038991B /* SZCalendarPicker.m in Sources */,
+				981076971D124C1E0046EABC /* PhotoFlowLayout.m in Sources */,
+				989A7FEA1D0EAE4F009A603F /* MyPageController.m in Sources */,
+				981076981D124C1E0046EABC /* PhotoModel.m in Sources */,
+				989A7FC21D0E8FD1009A603F /* HostViewController.m in Sources */,
+				9FB3E9B61D1043710038991B /* SZTableViewController.m in Sources */,
+				9810769A1D124C1E0046EABC /* PhotoViewController.m in Sources */,
+				981076991D124C1E0046EABC /* PhotoView.m in Sources */,
+				9F2A61971D0EC992004DFF46 /* HostDetailedViewController.m in Sources */,
+				9FB3E9AB1D1043680038991B /* UIColor+ZXLazy.m in Sources */,
+				9FB3E9941D1042AD0038991B /* CalendarViewController.m in Sources */,
+				989A7FCB1D0E9093009A603F /* RootViewController.m in Sources */,
+				9FBEC6B51D115C1500D5A28A /* AllenNSTextAttachment.m in Sources */,
+				981076951D124C1E0046EABC /* CollectionViewCell.m in Sources */,
+				989A7FDC1D0E9DDD009A603F /* DrawerViewController.m in Sources */,
+				9FB3E9B31D1043710038991B /* SZCalendarCell.m in Sources */,
+				989A7FDF1D0E9DFC009A603F /* UIView_extra.m in Sources */,
+				989A7F681D0E46DA009A603F /* main.m in Sources */,
+				9F2A61A01D0ECE39004DFF46 /* UIImage+ImageContentWithColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		989A7F741D0E46DA009A603F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				989A7F751D0E46DA009A603F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		989A7F781D0E46DA009A603F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		989A7F791D0E46DA009A603F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		989A7F7B1D0E46DA009A603F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E984E2ECD9072E1C89033494 /* Pods-Guli_Notebook.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Guli_Notebook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "odongua.Guli-Notebook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		989A7F7C1D0E46DA009A603F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2BB3B93ED0FD945C242A908 /* Pods-Guli_Notebook.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Guli_Notebook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "odongua.Guli-Notebook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		989A7F5E1D0E46DA009A603F /* Build configuration list for PBXProject "Guli_Notebook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				989A7F781D0E46DA009A603F /* Debug */,
+				989A7F791D0E46DA009A603F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		989A7F7A1D0E46DA009A603F /* Build configuration list for PBXNativeTarget "Guli_Notebook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				989A7F7B1D0E46DA009A603F /* Debug */,
+				989A7F7C1D0E46DA009A603F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 989A7F5B1D0E46DA009A603F /* Project object */;
+}

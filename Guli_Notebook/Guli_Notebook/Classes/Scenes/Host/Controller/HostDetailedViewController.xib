@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HostDetailedViewController">
+            <connections>
+                <outlet property="textViewTest" destination="eEe-ck-eK4" id="8yE-Pv-0tL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZA-lF-mQt">
+                    <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="U83-zC-xRG"/>
+                    </constraints>
+                    <items>
+                        <navigationItem id="aQV-s0-1TK">
+                            <nil key="title"/>
+                            <barButtonItem key="leftBarButtonItem" image="返回.png" id="dsM-9c-Dwt">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="backAction:" destination="-1" id="zEH-B8-nt7"/>
+                                </connections>
+                            </barButtonItem>
+                            <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="标题" textAlignment="center" minimumFontSize="17" id="4RR-F7-9B5">
+                                <rect key="frame" x="100" y="5" width="214" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <barButtonItem key="rightBarButtonItem" image="添加.png" id="OPW-NN-Wca">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="AddAction:" destination="-1" id="nAQ-wc-rb4"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eEe-ck-eK4">
+                    <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                    <color key="backgroundColor" red="0.87217359179999998" green="0.96519038280000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <string key="text">在一朵花开里，
+
+一袭素妆，衣袂飘飘，
+
+左手诗词黄卷，右手烟火人生，
+
+将梦放远，一世长安。</string>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="OZA-lF-mQt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="9ae-Gl-DyM"/>
+                <constraint firstItem="eEe-ck-eK4" firstAttribute="top" secondItem="OZA-lF-mQt" secondAttribute="bottom" id="EOk-Fg-AuP"/>
+                <constraint firstItem="eEe-ck-eK4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Jfx-fg-GPv"/>
+                <constraint firstItem="OZA-lF-mQt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="K5h-Va-gJQ"/>
+                <constraint firstAttribute="bottom" secondItem="eEe-ck-eK4" secondAttribute="bottom" id="LGT-vt-2ud"/>
+                <constraint firstAttribute="trailing" secondItem="OZA-lF-mQt" secondAttribute="trailing" id="N8j-ao-hXR"/>
+                <constraint firstAttribute="trailing" secondItem="eEe-ck-eK4" secondAttribute="trailing" id="eub-cs-Kqd"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <point key="canvasLocation" x="85" y="430"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="添加.png" width="28" height="28"/>
+        <image name="返回.png" width="28" height="28"/>
+    </resources>
+</document>

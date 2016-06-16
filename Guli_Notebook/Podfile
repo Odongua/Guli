@@ -1,0 +1,8 @@
+platform:ios,'9.2'
+target 'Guli_Notebook' do
+pod 'RWDropdownMenu', '~> 1.0.2'    #是一个时尚的下拉菜单，该菜单可以以全屏显示，也可以是弹出框，点击导航栏按钮即可显示该菜单
+pod 'AFNetworking'
+pod 'FMDB'
+pod 'SDWebImage'
+pod 'MJExtension'
+end 
