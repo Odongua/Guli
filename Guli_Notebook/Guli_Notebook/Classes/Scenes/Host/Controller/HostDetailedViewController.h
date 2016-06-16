@@ -10,5 +10,8 @@
 
 @interface HostDetailedViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *TitleTextField;
+
+@property (weak, nonatomic) IBOutlet UITextView *textViewTest;
 
 @end

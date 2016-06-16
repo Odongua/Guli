@@ -18,8 +18,6 @@
 
 @property (nonatomic, assign) RWDropdownMenuStyle menuStyle;
 
-@property (weak, nonatomic) IBOutlet UITextView *textViewTest;
-
 @property (nonatomic, strong)NSTextAttachment *attachment;
 //图片选择器
 @property (nonatomic, strong)UIImagePickerController *imgPicker;
@@ -38,6 +36,11 @@
     _imgPicker = [[UIImagePickerController alloc] init];
     //设置代理
     _imgPicker.delegate = self;
+    
+//    //添加一个编辑按钮,进入编辑页面
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"编辑"] style:UIBarButtonItemStyleDone target:self action:@selector(editingAction)];
+//    //改变编辑按钮颜色
+//    [self.navigationItem.rightBarButtonItem setTintColor:[UIColor whiteColor]];
 }
 
 //返回主页
@@ -45,7 +48,13 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-//添加
+//加入手势右边返回主页
+- (IBAction)backSwiperGestureRecognizer:(UISwipeGestureRecognizer *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+//添加进入下拉菜单
 - (IBAction)AddAction:(UIBarButtonItem *)sender {
     RWDropdownMenuCellAlignment alignment = RWDropdownMenuCellAlignmentCenter;
     if (sender == self.navigationItem.leftBarButtonItem)
@@ -60,8 +69,8 @@
     [RWDropdownMenu presentFromViewController:self withItems:self.menuItems align:alignment style:self.menuStyle navBarImage:[sender image] completion:nil];
 }
 
-- (NSArray *)menuItems
-{
+//下拉菜单添加3个分组,并进入相册
+- (NSArray *)menuItems{
     if (!_menuItems)
     {
         _menuItems =
@@ -112,25 +121,11 @@
     AllenNSTextAttachment *allenNSTextAttachment = [AllenNSTextAttachment new];
     allenNSTextAttachment.imgSize = CGSizeMake(_textViewTest.frame.size.width, 0);
     
-    allenNSTextAttachment.image = _img;
+    allenNSTextAttachment.image = _img;    
     
-//    _attachment = [[NSTextAttachment alloc]init];
-//        _attachment.image = _img;
-    //2.将attachment对象转换成属性字符串，以便之后将图片显示在文本中
-//    NSMutableAttributedString *attributedString = (NSMutableAttributedString *) [NSAttributedString attributedStringWithAttachment:_attachment];
-    
-    
-    
-    //在文章末尾添加图片
-//    [_textViewTest.textStorage appendAttributedString:attributedString];
-    //3.在任意位置添加图片
+    //2.在任意位置添加图片
     [_textViewTest.textStorage insertAttributedString:[NSAttributedString attributedStringWithAttachment:allenNSTextAttachment] atIndex:_textViewTest.selectedRange.location];
     
-    
-//    //如果图片来源是照相机,把图片存入相册
-//    if (picker.sourceType == UIImagePickerControllerSourceTypeCamera) {
-//        UIImageWriteToSavedPhotosAlbum(_img, self, @selector(saveImage), nil);
-//    }
     //隐藏图片选择器
     [self dismissViewControllerAnimated:YES completion:nil];
 }
