@@ -15,14 +15,14 @@
 static AppDelegate *appDelegate = nil;
 @interface AppDelegate ()
 
-@property(nonatomic,strong)FMDatabase *db;
+
 
 @end
 
 @implementation AppDelegate
 
 //AppDelegate单例
--(instancetype)sharedAppDelegate{
++(instancetype)sharedAppDelegate{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         appDelegate = [[AppDelegate alloc]init];
@@ -44,7 +44,7 @@ static AppDelegate *appDelegate = nil;
     if ([_db open]) {
         NSLog(@"数据库打开成功");
         //创建数据库的SQL语句
-        NSString *sqlStr = @"CREATE TABLE IF NOT EXISTS GULI(G_ID TEXT PRIMARY KEY,G_TITLE TEXT,G_SUMMARY TEXT,G_ADDRESS TEXT,G_DATE TEXT,G_TIME TEXT,G_IMAGE DATA,G_VIDEO DATA,G_VOICE DATA)";
+        NSString *sqlStr = @"CREATE TABLE IF NOT EXISTS GULI(G_ID INTEGER PRIMARY KEY AUTOINCREMENT,G_TITLE TEXT,G_SUMMARY TEXT,G_ADDRESS TEXT,G_DATE TEXT,G_TIME TEXT,G_IMAGE TEXT,G_VIDEO DATA,G_VOICE DATA,G_LOCATION INTEGER)";
         //执行SQL语句
         BOOL isCreate = [_db executeUpdate:sqlStr];
         if (isCreate) {

@@ -16,6 +16,11 @@
 		981076991D124C1E0046EABC /* PhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 981076901D124C1E0046EABC /* PhotoView.m */; };
 		9810769A1D124C1E0046EABC /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 981076921D124C1E0046EABC /* PhotoViewController.m */; };
 		9810769B1D124C1E0046EABC /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 981076931D124C1E0046EABC /* PhotoViewController.xib */; };
+		9810769D1D1254D10046EABC /* 编辑.png in Resources */ = {isa = PBXBuildFile; fileRef = 9810769C1D1254D10046EABC /* 编辑.png */; };
+		981076A21D1289480046EABC /* HostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 981076A01D1289480046EABC /* HostTableViewCell.m */; };
+		981076A31D1289480046EABC /* HostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 981076A11D1289480046EABC /* HostTableViewCell.xib */; };
+		981076A71D12CB690046EABC /* HostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 981076A61D12CB690046EABC /* HostModel.m */; };
+		983374A51D13EAFC004E3A5F /* IMG_0689.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 983374A41D13EAFC004E3A5F /* IMG_0689.jpg */; };
 		989A7F681D0E46DA009A603F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 989A7F671D0E46DA009A603F /* main.m */; };
 		989A7F731D0E46DA009A603F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989A7F721D0E46DA009A603F /* Assets.xcassets */; };
 		989A7F761D0E46DA009A603F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989A7F741D0E46DA009A603F /* LaunchScreen.storyboard */; };
@@ -63,6 +68,13 @@
 		981076911D124C1E0046EABC /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		981076921D124C1E0046EABC /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		981076931D124C1E0046EABC /* PhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoViewController.xib; sourceTree = "<group>"; };
+		9810769C1D1254D10046EABC /* 编辑.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "编辑.png"; path = "../Resources/编辑.png"; sourceTree = "<group>"; };
+		9810769F1D1289480046EABC /* HostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostTableViewCell.h; sourceTree = "<group>"; };
+		981076A01D1289480046EABC /* HostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostTableViewCell.m; sourceTree = "<group>"; };
+		981076A11D1289480046EABC /* HostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HostTableViewCell.xib; sourceTree = "<group>"; };
+		981076A51D12CB690046EABC /* HostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostModel.h; sourceTree = "<group>"; };
+		981076A61D12CB690046EABC /* HostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostModel.m; sourceTree = "<group>"; };
+		983374A41D13EAFC004E3A5F /* IMG_0689.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0689.jpg; sourceTree = "<group>"; };
 		989A7F631D0E46DA009A603F /* Guli_Notebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guli_Notebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989A7F671D0E46DA009A603F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		989A7F721D0E46DA009A603F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -157,6 +169,25 @@
 				981076931D124C1E0046EABC /* PhotoViewController.xib */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		9810769E1D12891A0046EABC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9810769F1D1289480046EABC /* HostTableViewCell.h */,
+				981076A01D1289480046EABC /* HostTableViewCell.m */,
+				981076A11D1289480046EABC /* HostTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		981076A41D12CB540046EABC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				981076A51D12CB690046EABC /* HostModel.h */,
+				981076A61D12CB690046EABC /* HostModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		989A7F5A1D0E46DA009A603F = {
@@ -256,6 +287,8 @@
 		989A7FB21D0E8FD1009A603F /* Host */ = {
 			isa = PBXGroup;
 			children = (
+				981076A41D12CB540046EABC /* Model */,
+				9810769E1D12891A0046EABC /* View */,
 				989A7FB31D0E8FD1009A603F /* Controller */,
 			);
 			path = Host;
@@ -315,6 +348,7 @@
 		9F2A61831D0EB223004DFF46 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				983374A41D13EAFC004E3A5F /* IMG_0689.jpg */,
 				9F2A61911D0EC769004DFF46 /* 空.h */,
 				9F2A61921D0EC769004DFF46 /* 空.m */,
 			);
@@ -325,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				9F2A61871D0EB4F8004DFF46 /* 更多.png */,
+				9810769C1D1254D10046EABC /* 编辑.png */,
 				9FBCEF201D0FA56300B768C1 /* 添加.png */,
 				9FBEC6AB1D11369800D5A28A /* 返回.png */,
 				9FB3E98B1D1038390038991B /* 照片.png */,
@@ -447,14 +482,17 @@
 				9F2A61881D0EB4F8004DFF46 /* 更多.png in Resources */,
 				9FB3E9901D1038390038991B /* 视频.png in Resources */,
 				989A7F761D0E46DA009A603F /* LaunchScreen.storyboard in Resources */,
+				983374A51D13EAFC004E3A5F /* IMG_0689.jpg in Resources */,
 				9FB3E9A81D1043680038991B /* bt_next@2x.png in Resources */,
 				9FB3E98E1D1038390038991B /* 照片.png in Resources */,
+				981076A31D1289480046EABC /* HostTableViewCell.xib in Resources */,
 				9810769B1D124C1E0046EABC /* PhotoViewController.xib in Resources */,
 				989A7F731D0E46DA009A603F /* Assets.xcassets in Resources */,
 				9FB3E9951D1042AD0038991B /* CalendarViewController.xib in Resources */,
 				9FBEC6AC1D11369800D5A28A /* 返回.png in Resources */,
 				9FBCEF211D0FA56300B768C1 /* 添加.png in Resources */,
 				9FB3E9A91D1043680038991B /* bt_previous@2x.png in Resources */,
+				9810769D1D1254D10046EABC /* 编辑.png in Resources */,
 				9F2A61981D0EC992004DFF46 /* HostDetailedViewController.xib in Resources */,
 				981076961D124C1E0046EABC /* CollectionViewCell.xib in Resources */,
 				9FB3E98F1D1038390038991B /* 录音.png in Resources */,
@@ -529,8 +567,10 @@
 				981076991D124C1E0046EABC /* PhotoView.m in Sources */,
 				9F2A61971D0EC992004DFF46 /* HostDetailedViewController.m in Sources */,
 				9FB3E9AB1D1043680038991B /* UIColor+ZXLazy.m in Sources */,
+				981076A71D12CB690046EABC /* HostModel.m in Sources */,
 				9FB3E9941D1042AD0038991B /* CalendarViewController.m in Sources */,
 				989A7FCB1D0E9093009A603F /* RootViewController.m in Sources */,
+				981076A21D1289480046EABC /* HostTableViewCell.m in Sources */,
 				9FBEC6B51D115C1500D5A28A /* AllenNSTextAttachment.m in Sources */,
 				981076951D124C1E0046EABC /* CollectionViewCell.m in Sources */,
 				989A7FDC1D0E9DDD009A603F /* DrawerViewController.m in Sources */,

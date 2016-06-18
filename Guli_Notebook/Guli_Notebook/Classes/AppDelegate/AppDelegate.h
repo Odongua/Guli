@@ -8,11 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "DrawerViewController.h"
+#import <FMDB.h>
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) DrawerViewController *drawerVC;
+
+@property(nonatomic,strong)FMDatabase *db;
+
++(instancetype)sharedAppDelegate;
 
 @end
 

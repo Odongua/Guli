@@ -45,9 +45,7 @@
     self.title = @"照片墙";
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], UITextAttributeTextColor,[UIColor whiteColor], UITextAttributeTextShadowColor,[NSValue valueWithUIOffset:UIOffsetMake(0, 0)], UITextAttributeTextShadowOffset,[UIFont fontWithName:@"Arial-Bold" size:0.0], UITextAttributeFont,nil]];
     self.view.backgroundColor = [UIColor whiteColor];
-//    self.navigationController.navigationBar.hidden = YES;
     _layOut = [[PhotoFlowLayout alloc] init];
-//    _collection = [[UICollectionView alloc]initWithFrame:self.view.frame collectionViewLayout:_layOut];
     _collection.delegate = self;
     _collection.dataSource = self;
     
@@ -59,7 +57,7 @@
     //注册
     [_collection registerNib:[UINib nibWithNibName:@"CollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"cell"];
     [self.dataArr addObjectsFromArray:arr];
-    [self.view addSubview:_collection];
+    
     NSLog(@"%@",self.dataArr);
     
 }
