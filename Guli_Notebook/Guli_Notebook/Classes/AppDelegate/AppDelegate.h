@@ -17,7 +17,5 @@
 
 @property(nonatomic,strong)FMDatabase *db;
 
-+(instancetype)sharedAppDelegate;
-
 @end
 

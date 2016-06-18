@@ -22,7 +22,7 @@ static AppDelegate *appDelegate = nil;
 @implementation AppDelegate
 
 //AppDelegate单例
-+(instancetype)sharedAppDelegate{
+-(instancetype)sharedAppDelegate{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         appDelegate = [[AppDelegate alloc]init];

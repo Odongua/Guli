@@ -36,14 +36,7 @@
 		9F2A61981D0EC992004DFF46 /* HostDetailedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F2A61961D0EC992004DFF46 /* HostDetailedViewController.xib */; };
 		9F2A61A01D0ECE39004DFF46 /* UIImage+ImageContentWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2A619F1D0ECE39004DFF46 /* UIImage+ImageContentWithColor.m */; };
 		9F3E5ADA1D12341100FF4E84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E5AD91D12341100FF4E84 /* AppDelegate.m */; };
-		9F7975BE1D127FCC007DBA1A /* 编辑.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F7975BD1D127FCC007DBA1A /* 编辑.png */; };
-		9F7975FF1D129544007DBA1A /* 主页.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F7975F91D129544007DBA1A /* 主页.png */; };
-		9F7976001D129544007DBA1A /* 主页(1).png in Resources */ = {isa = PBXBuildFile; fileRef = 9F7975FA1D129544007DBA1A /* 主页(1).png */; };
-		9F7976041D129544007DBA1A /* 照片墙(1).png in Resources */ = {isa = PBXBuildFile; fileRef = 9F7975FE1D129544007DBA1A /* 照片墙(1).png */; };
-		9F7976071D129636007DBA1A /* 日历(1).png in Resources */ = {isa = PBXBuildFile; fileRef = 9F7976051D129636007DBA1A /* 日历(1).png */; };
-		9F7976081D129636007DBA1A /* 日历.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F7976061D129636007DBA1A /* 日历.png */; };
-		9F79760A1D12984C007DBA1A /* 照片墙.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F7976091D12984C007DBA1A /* 照片墙.png */; };
-		9F79760C1D1298A1007DBA1A /* 照片.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F79760B1D1298A1007DBA1A /* 照片.png */; };
+		9FB3E98E1D1038390038991B /* 照片.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E98B1D1038390038991B /* 照片.png */; };
 		9FB3E98F1D1038390038991B /* 录音.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E98C1D1038390038991B /* 录音.png */; };
 		9FB3E9901D1038390038991B /* 视频.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E98D1D1038390038991B /* 视频.png */; };
 		9FB3E9941D1042AD0038991B /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3E9921D1042AD0038991B /* CalendarViewController.m */; };
@@ -98,9 +91,9 @@
 		989A7FDE1D0E9DFC009A603F /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView_extra.m; sourceTree = "<group>"; };
 		989A7FE81D0EAE4F009A603F /* MyPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPageController.h; sourceTree = "<group>"; };
 		989A7FE91D0EAE4F009A603F /* MyPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPageController.m; sourceTree = "<group>"; };
-		9F2A61871D0EB4F8004DFF46 /* 更多.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "更多.png"; path = "../../General/更多.png"; sourceTree = "<group>"; };
-		9F2A61911D0EC769004DFF46 /* 空.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "空.h"; path = "../Resources/空.h"; sourceTree = "<group>"; };
-		9F2A61921D0EC769004DFF46 /* 空.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "空.m"; path = "../Resources/空.m"; sourceTree = "<group>"; };
+		9F2A61871D0EB4F8004DFF46 /* 更多.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更多.png"; sourceTree = "<group>"; };
+		9F2A61911D0EC769004DFF46 /* 空.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "空.h"; sourceTree = "<group>"; };
+		9F2A61921D0EC769004DFF46 /* 空.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "空.m"; sourceTree = "<group>"; };
 		9F2A61941D0EC992004DFF46 /* HostDetailedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostDetailedViewController.h; sourceTree = "<group>"; };
 		9F2A61951D0EC992004DFF46 /* HostDetailedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostDetailedViewController.m; sourceTree = "<group>"; };
 		9F2A61961D0EC992004DFF46 /* HostDetailedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HostDetailedViewController.xib; sourceTree = "<group>"; };
@@ -109,16 +102,9 @@
 		9F2A619F1D0ECE39004DFF46 /* UIImage+ImageContentWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageContentWithColor.m"; sourceTree = "<group>"; };
 		9F3E5AD81D12341100FF4E84 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9F3E5AD91D12341100FF4E84 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9F7975BD1D127FCC007DBA1A /* 编辑.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "编辑.png"; path = "../../General/编辑.png"; sourceTree = "<group>"; };
-		9F7975F91D129544007DBA1A /* 主页.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主页.png"; sourceTree = "<group>"; };
-		9F7975FA1D129544007DBA1A /* 主页(1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主页(1).png"; sourceTree = "<group>"; };
-		9F7975FE1D129544007DBA1A /* 照片墙(1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照片墙(1).png"; sourceTree = "<group>"; };
-		9F7976051D129636007DBA1A /* 日历(1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日历(1).png"; sourceTree = "<group>"; };
-		9F7976061D129636007DBA1A /* 日历.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日历.png"; sourceTree = "<group>"; };
-		9F7976091D12984C007DBA1A /* 照片墙.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照片墙.png"; sourceTree = "<group>"; };
-		9F79760B1D1298A1007DBA1A /* 照片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照片.png"; sourceTree = "<group>"; };
-		9FB3E98C1D1038390038991B /* 录音.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "录音.png"; path = "../../General/录音.png"; sourceTree = "<group>"; };
-		9FB3E98D1D1038390038991B /* 视频.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "视频.png"; path = "../../General/视频.png"; sourceTree = "<group>"; };
+		9FB3E98B1D1038390038991B /* 照片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照片.png"; sourceTree = "<group>"; };
+		9FB3E98C1D1038390038991B /* 录音.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "录音.png"; sourceTree = "<group>"; };
+		9FB3E98D1D1038390038991B /* 视频.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "视频.png"; sourceTree = "<group>"; };
 		9FB3E9911D1042AD0038991B /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
 		9FB3E9921D1042AD0038991B /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
 		9FB3E9931D1042AD0038991B /* CalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
@@ -135,8 +121,8 @@
 		9FB3E9B01D1043710038991B /* SZCalendarPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SZCalendarPicker.xib; sourceTree = "<group>"; };
 		9FB3E9B11D1043710038991B /* SZTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZTableViewController.h; sourceTree = "<group>"; };
 		9FB3E9B21D1043710038991B /* SZTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZTableViewController.m; sourceTree = "<group>"; };
-		9FBCEF201D0FA56300B768C1 /* 添加.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "添加.png"; path = "../../General/添加.png"; sourceTree = "<group>"; };
-		9FBEC6AB1D11369800D5A28A /* 返回.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "返回.png"; path = "../../General/返回.png"; sourceTree = "<group>"; };
+		9FBCEF201D0FA56300B768C1 /* 添加.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加.png"; sourceTree = "<group>"; };
+		9FBEC6AB1D11369800D5A28A /* 返回.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回.png"; sourceTree = "<group>"; };
 		9FBEC6B31D115C1500D5A28A /* AllenNSTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllenNSTextAttachment.h; sourceTree = "<group>"; };
 		9FBEC6B41D115C1500D5A28A /* AllenNSTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllenNSTextAttachment.m; sourceTree = "<group>"; };
 		E984E2ECD9072E1C89033494 /* Pods-Guli_Notebook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guli_Notebook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Guli_Notebook/Pods-Guli_Notebook.debug.xcconfig"; sourceTree = "<group>"; };
@@ -362,14 +348,9 @@
 		9F2A61831D0EB223004DFF46 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				983374A41D13EAFC004E3A5F /* IMG_0689.jpg */,
 				9F2A61911D0EC769004DFF46 /* 空.h */,
 				9F2A61921D0EC769004DFF46 /* 空.m */,
-=======
-				9F7975E01D129129007DBA1A /* TabBarImages */,
-				9F7975DF1D129113007DBA1A /* Images */,
->>>>>>> fd5e2df597d3f8a73747a8dab8194b0d3e823eb2
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -377,7 +358,6 @@
 		9F2A61841D0EB223004DFF46 /* General */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				9F2A61871D0EB4F8004DFF46 /* 更多.png */,
 				9810769C1D1254D10046EABC /* 编辑.png */,
 				9FBCEF201D0FA56300B768C1 /* 添加.png */,
@@ -385,10 +365,6 @@
 				9FB3E98B1D1038390038991B /* 照片.png */,
 				9FB3E98C1D1038390038991B /* 录音.png */,
 				9FB3E98D1D1038390038991B /* 视频.png */,
-=======
-				9F2A61911D0EC769004DFF46 /* 空.h */,
-				9F2A61921D0EC769004DFF46 /* 空.m */,
->>>>>>> fd5e2df597d3f8a73747a8dab8194b0d3e823eb2
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -400,33 +376,6 @@
 				9F2A619F1D0ECE39004DFF46 /* UIImage+ImageContentWithColor.m */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		9F7975DF1D129113007DBA1A /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				9F2A61871D0EB4F8004DFF46 /* 更多.png */,
-				9FBCEF201D0FA56300B768C1 /* 添加.png */,
-				9FBEC6AB1D11369800D5A28A /* 返回.png */,
-				9FB3E98C1D1038390038991B /* 录音.png */,
-				9F79760B1D1298A1007DBA1A /* 照片.png */,
-				9FB3E98D1D1038390038991B /* 视频.png */,
-				9F7975BD1D127FCC007DBA1A /* 编辑.png */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		9F7975E01D129129007DBA1A /* TabBarImages */ = {
-			isa = PBXGroup;
-			children = (
-				9F7975F91D129544007DBA1A /* 主页.png */,
-				9F7975FA1D129544007DBA1A /* 主页(1).png */,
-				9F7976051D129636007DBA1A /* 日历(1).png */,
-				9F7976061D129636007DBA1A /* 日历.png */,
-				9F7976091D12984C007DBA1A /* 照片墙.png */,
-				9F7975FE1D129544007DBA1A /* 照片墙(1).png */,
-			);
-			path = TabBarImages;
 			sourceTree = "<group>";
 		};
 		9FB3E9A01D1043380038991B /* model */ = {
@@ -531,37 +480,22 @@
 				989A7FC31D0E8FD1009A603F /* HostViewController.xib in Resources */,
 				9FB3E9B51D1043710038991B /* SZCalendarPicker.xib in Resources */,
 				9F2A61881D0EB4F8004DFF46 /* 更多.png in Resources */,
-				9F7976081D129636007DBA1A /* 日历.png in Resources */,
 				9FB3E9901D1038390038991B /* 视频.png in Resources */,
 				989A7F761D0E46DA009A603F /* LaunchScreen.storyboard in Resources */,
-<<<<<<< HEAD
 				983374A51D13EAFC004E3A5F /* IMG_0689.jpg in Resources */,
 				9FB3E9A81D1043680038991B /* bt_next@2x.png in Resources */,
 				9FB3E98E1D1038390038991B /* 照片.png in Resources */,
 				981076A31D1289480046EABC /* HostTableViewCell.xib in Resources */,
-=======
-				9F7976071D129636007DBA1A /* 日历(1).png in Resources */,
-				9F7976001D129544007DBA1A /* 主页(1).png in Resources */,
-				9F79760A1D12984C007DBA1A /* 照片墙.png in Resources */,
-				9FB3E9A81D1043680038991B /* bt_next@2x.png in Resources */,
->>>>>>> fd5e2df597d3f8a73747a8dab8194b0d3e823eb2
 				9810769B1D124C1E0046EABC /* PhotoViewController.xib in Resources */,
 				989A7F731D0E46DA009A603F /* Assets.xcassets in Resources */,
 				9FB3E9951D1042AD0038991B /* CalendarViewController.xib in Resources */,
 				9FBEC6AC1D11369800D5A28A /* 返回.png in Resources */,
-				9F7976041D129544007DBA1A /* 照片墙(1).png in Resources */,
 				9FBCEF211D0FA56300B768C1 /* 添加.png in Resources */,
-				9F7975FF1D129544007DBA1A /* 主页.png in Resources */,
 				9FB3E9A91D1043680038991B /* bt_previous@2x.png in Resources */,
-<<<<<<< HEAD
 				9810769D1D1254D10046EABC /* 编辑.png in Resources */,
-=======
-				9F7975BE1D127FCC007DBA1A /* 编辑.png in Resources */,
->>>>>>> fd5e2df597d3f8a73747a8dab8194b0d3e823eb2
 				9F2A61981D0EC992004DFF46 /* HostDetailedViewController.xib in Resources */,
 				981076961D124C1E0046EABC /* CollectionViewCell.xib in Resources */,
 				9FB3E98F1D1038390038991B /* 录音.png in Resources */,
-				9F79760C1D1298A1007DBA1A /* 照片.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

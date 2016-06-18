@@ -2,7 +2,7 @@
 //  PhotoFlowLayout.m
 //  Guli_Notebook
 //
-//  Created by Allen on 16/6/15.
+//  Created by lanou3g on 16/6/15.
 //  Copyright © 2016年 Borjigin Odongua. All rights reserved.
 //
 
@@ -44,7 +44,6 @@
 {
     return YES;
 }
-
 #warning 设置可滚动区域范围
 -(CGSize)collectionViewContentSize
 {
@@ -57,7 +56,6 @@
     }];
     return CGSizeMake(0, [self.maxYdic[maxCol] floatValue]);
 }
-
 -(UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     __block NSString * minCol = @"0";
@@ -82,7 +80,6 @@
     attri.frame = CGRectMake(x, y, width, hight);
     return attri;
 }
-
 -(NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
     for(int i = 0;i<self.colCount;i++)

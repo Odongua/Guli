@@ -12,23 +12,17 @@
 #import "PhotoFlowLayout.h"
 #import "PhotoModel.h"
 #import "MJExtension.h"
-
 #define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
 #define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
-
 @interface PhotoViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,PhotoFlowLayoutDelegate,didRemovePictureDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collection;
 
 @property(nonatomic,strong)NSMutableArray * dataArr;
-
 @property (nonatomic, assign)CGRect transformedFrame;
-
 @property (nonatomic, strong)UIImageView *lookImg;
-
 @property (nonatomic , strong)PhotoView* photoView;
-
 @property (nonnull, strong)PhotoFlowLayout *layOut;
 
 

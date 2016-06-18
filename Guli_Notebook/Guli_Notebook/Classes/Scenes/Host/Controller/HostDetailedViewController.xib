@@ -7,13 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HostDetailedViewController">
             <connections>
-<<<<<<< HEAD
                 <outlet property="summaryTextView" destination="eEe-ck-eK4" id="9PP-7m-BDZ"/>
                 <outlet property="titleTextField" destination="4RR-F7-9B5" id="PVd-eJ-4Yc"/>
-=======
-                <outlet property="TitleTextField" destination="4RR-F7-9B5" id="2OH-i0-rHn"/>
-                <outlet property="textViewTest" destination="eEe-ck-eK4" id="8yE-Pv-0tL"/>
->>>>>>> fd5e2df597d3f8a73747a8dab8194b0d3e823eb2
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,26 +25,22 @@
                     <items>
                         <navigationItem id="aQV-s0-1TK">
                             <nil key="title"/>
-                            <barButtonItem key="leftBarButtonItem" image="返回.png" id="X6T-F4-V3i">
+                            <barButtonItem key="leftBarButtonItem" image="返回.png" id="dsM-9c-Dwt">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <action selector="backAction:" destination="-1" id="Tt7-aF-Csy"/>
+                                    <action selector="backAction:" destination="-1" id="zEH-B8-nt7"/>
                                 </connections>
                             </barButtonItem>
                             <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="标题" textAlignment="center" minimumFontSize="17" id="4RR-F7-9B5">
-<<<<<<< HEAD
                                 <rect key="frame" x="100" y="4.5" width="214" height="35"/>
-=======
-                                <rect key="frame" x="100" y="7" width="214" height="30"/>
->>>>>>> fd5e2df597d3f8a73747a8dab8194b0d3e823eb2
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <barButtonItem key="rightBarButtonItem" image="添加.png" id="bMD-lP-fiI">
+                            <barButtonItem key="rightBarButtonItem" image="添加.png" id="OPW-NN-Wca">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <action selector="AddAction:" destination="-1" id="m2d-N0-5RQ"/>
+                                    <action selector="AddAction:" destination="-1" id="nAQ-wc-rb4"/>
                                 </connections>
                             </barButtonItem>
                         </navigationItem>
@@ -58,22 +49,8 @@
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eEe-ck-eK4">
                     <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                     <color key="backgroundColor" red="0.87217359179999998" green="0.96519038280000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-<<<<<<< HEAD
-=======
-                    <gestureRecognizers/>
-                    <string key="text">在一朵花开里，
-
-一袭素妆，衣袂飘飘，
-
-左手诗词黄卷，右手烟火人生，
-
-将梦放远，一世长安。</string>
->>>>>>> fd5e2df597d3f8a73747a8dab8194b0d3e823eb2
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                    <connections>
-                        <outletCollection property="gestureRecognizers" destination="7jX-Px-qrF" appends="YES" id="C5u-Yf-YD4"/>
-                    </connections>
                 </textView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -87,17 +64,8 @@
                 <constraint firstAttribute="trailing" secondItem="eEe-ck-eK4" secondAttribute="trailing" id="eub-cs-Kqd"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-<<<<<<< HEAD
             <point key="canvasLocation" x="45" y="430"/>
-=======
-            <point key="canvasLocation" x="267" y="417"/>
->>>>>>> fd5e2df597d3f8a73747a8dab8194b0d3e823eb2
         </view>
-        <swipeGestureRecognizer direction="right" id="7jX-Px-qrF">
-            <connections>
-                <action selector="backSwiperGestureRecognizer:" destination="-1" id="dmu-EJ-Mja"/>
-            </connections>
-        </swipeGestureRecognizer>
     </objects>
     <resources>
         <image name="添加.png" width="28" height="28"/>

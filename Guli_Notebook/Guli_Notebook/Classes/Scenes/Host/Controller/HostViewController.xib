@@ -15,7 +15,6 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-<<<<<<< HEAD
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GAz-Fm-AJr">
                     <rect key="frame" x="22" y="0.0" width="382" height="736"/>
@@ -23,8 +22,6 @@
                     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                 </tableView>
             </subviews>
-=======
->>>>>>> fd5e2df597d3f8a73747a8dab8194b0d3e823eb2
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <color key="tintColor" red="0.91056662934396182" green="1" blue="0.58491846670234882" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
@@ -34,7 +31,7 @@
                 <constraint firstItem="GAz-Fm-AJr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XLy-k4-jN5"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-            <point key="canvasLocation" x="388" y="305"/>
+            <point key="canvasLocation" x="412" y="331"/>
         </view>
     </objects>
 </document>

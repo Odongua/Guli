@@ -36,12 +36,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.title = @"主页";
-    
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], UITextAttributeTextColor,[UIColor whiteColor], UITextAttributeTextShadowColor,[NSValue valueWithUIOffset:UIOffsetMake(0, 0)], UITextAttributeTextShadowOffset,[UIFont fontWithName:@"Arial-Bold" size:0.0], UITextAttributeFont,nil]];
     
-<<<<<<< HEAD
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"编辑.png"] style:UIBarButtonItemStyleDone target:self action:@selector(barButtonAction)];
     [self.navigationItem.rightBarButtonItem setTintColor:[UIColor whiteColor]];
 
@@ -51,7 +48,7 @@
     [_noteListTableView registerNib:[UINib nibWithNibName:@"HostTableViewCell" bundle:nil] forCellReuseIdentifier:@"HostListCell"];
     
 //    [self getData];
-
+    
 }
 -(void)viewWillAppear:(BOOL)animated{
     _titleArr = [NSMutableArray array];
@@ -146,16 +143,6 @@
 }
 
 -(void)barButtonAction{
-=======
-    //添加一个编辑按钮,进入编辑页面
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"编辑"] style:UIBarButtonItemStyleDone target:self action:@selector(editingAction)];
-    //改变编辑按钮颜色
-    [self.navigationItem.rightBarButtonItem setTintColor:[UIColor whiteColor]];
-    
-}
-
-- (void)editingAction{
->>>>>>> fd5e2df597d3f8a73747a8dab8194b0d3e823eb2
     HostDetailedViewController *VC = [[HostDetailedViewController alloc]init];
     [self presentViewController:VC animated:YES completion:nil];
 }
@@ -175,8 +162,4 @@
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> fd5e2df597d3f8a73747a8dab8194b0d3e823eb2
 @end
