@@ -22,8 +22,12 @@
 
 @property (nonatomic, assign) RWDropdownMenuStyle menuStyle;
 
+<<<<<<< HEAD
 
 
+=======
+@property (nonatomic, strong)NSTextAttachment *attachment;
+>>>>>>> fd5e2df597d3f8a73747a8dab8194b0d3e823eb2
 //图片选择器
 @property (nonatomic, strong)UIImagePickerController *imgPicker;
 
@@ -51,6 +55,7 @@
     //设置代理
     _imgPicker.delegate = self;
     
+<<<<<<< HEAD
     _attachment = [[AllenNSTextAttachment alloc]init];
     _titleTextField.text = _titleStr;
     _summaryTextView.text = _summaryStr;
@@ -76,6 +81,12 @@
             _summaryTextView.text = _summaryStr;
         }
     }
+=======
+//    //添加一个编辑按钮,进入编辑页面
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"编辑"] style:UIBarButtonItemStyleDone target:self action:@selector(editingAction)];
+//    //改变编辑按钮颜色
+//    [self.navigationItem.rightBarButtonItem setTintColor:[UIColor whiteColor]];
+>>>>>>> fd5e2df597d3f8a73747a8dab8194b0d3e823eb2
 }
 //返回主页
 - (IBAction)backAction:(UIBarButtonItem *)sender {
@@ -134,6 +145,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+<<<<<<< HEAD
 //获取系统时间
 -(NSString *)getSystemTime{
     NSDate *getDate = [NSDate date];
@@ -158,6 +170,15 @@
     return nsDateString;
 }
 //添加按钮
+=======
+//加入手势右边返回主页
+- (IBAction)backSwiperGestureRecognizer:(UISwipeGestureRecognizer *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+//添加进入下拉菜单
+>>>>>>> fd5e2df597d3f8a73747a8dab8194b0d3e823eb2
 - (IBAction)AddAction:(UIBarButtonItem *)sender {
     RWDropdownMenuCellAlignment alignment = RWDropdownMenuCellAlignmentCenter;
     if (sender == self.navigationItem.leftBarButtonItem)
@@ -171,8 +192,8 @@
     [RWDropdownMenu presentFromViewController:self withItems:self.menuItems align:alignment style:self.menuStyle navBarImage:[sender image] completion:nil];
 }
 
-- (NSArray *)menuItems
-{
+//下拉菜单添加3个分组,并进入相册
+- (NSArray *)menuItems{
     if (!_menuItems)
     {
         _menuItems =
@@ -202,11 +223,19 @@
     AllenNSTextAttachment *allenNSTextAttachment = [AllenNSTextAttachment new];
     allenNSTextAttachment.imgSize = CGSizeMake(_summaryTextView.frame.size.width, 0);
     
+<<<<<<< HEAD
     allenNSTextAttachment.image = _img;
     _attachment = allenNSTextAttachment;
     //2.在任意位置添加图片
     [_summaryTextView.textStorage insertAttributedString:[NSAttributedString attributedStringWithAttachment:allenNSTextAttachment] atIndex:_summaryTextView.selectedRange.location];
     _location1 = _summaryTextView.selectedRange.location;
+=======
+    allenNSTextAttachment.image = _img;    
+    
+    //2.在任意位置添加图片
+    [_textViewTest.textStorage insertAttributedString:[NSAttributedString attributedStringWithAttachment:allenNSTextAttachment] atIndex:_textViewTest.selectedRange.location];
+    
+>>>>>>> fd5e2df597d3f8a73747a8dab8194b0d3e823eb2
     //隐藏图片选择器
     [self dismissViewControllerAnimated:YES completion:nil];
     

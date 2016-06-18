@@ -2,17 +2,22 @@
 //  PhotoView.m
 //  Guli_Notebook
 //
-//  Created by lanou3g on 16/6/15.
+//  Created by Allen on 16/6/15.
 //  Copyright © 2016年 Borjigin Odongua. All rights reserved.
 //
 
 #import "PhotoView.h"
 #import "UIImageView+WebCache.h"
+
 #define SCREEN_HEIGHT     ([[UIScreen mainScreen] bounds].size.height)
 #define SCREEN_WIDTH      ([[UIScreen mainScreen] bounds].size.width)
+
 @interface PhotoView   ()<UIScrollViewDelegate>
+
 @property (nonatomic, strong)NSMutableArray *dataArr;
+
 @property (nonatomic, strong)NSMutableArray *scrollArr;
+
 @end
 
 @implementation PhotoView
@@ -37,6 +42,7 @@
     _scrollView.contentSize = CGSizeMake(array.count * SCREEN_WIDTH, 1);
     _scrollView.contentOffset = CGPointMake(SCREEN_WIDTH * number, 0);
     [self addSubview:_scrollView];
+    
     for (NSInteger i = 0; i < _dataArr.count; i++) {
         PhotoModel *model = _dataArr[i];
         UIScrollView *scroller = [[UIScrollView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH * i, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
@@ -45,12 +51,14 @@
         scroller.maximumZoomScale = 2.0;
         [_scrollArr addObject:scroller];
         [_scrollView addSubview:scroller];
+        
         UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 40, SCREEN_WIDTH - 20, model.h / model.w * (SCREEN_WIDTH - 20))];
         imageView.layer.masksToBounds = YES;
         imageView.layer.cornerRadius = 3;
         imageView.tag = 1;
         [imageView sd_setImageWithURL:[NSURL URLWithString:[_dataArr[i] img]]];
         [scroller addSubview:imageView];
+        
         UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         backBtn.frame = CGRectMake(10, 10, 32, 32);
         [backBtn setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
@@ -67,7 +75,6 @@
         doubleTap.numberOfTapsRequired = 2;
         doubleTap.numberOfTouchesRequired = 1;
         [scroller addGestureRecognizer:doubleTap];
-        
     }
 }
 
@@ -145,12 +152,5 @@
 }
 
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 @end
